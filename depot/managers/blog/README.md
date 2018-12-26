@@ -1,1 +1,0 @@
-To get directory setup
