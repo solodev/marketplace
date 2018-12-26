@@ -13,24 +13,24 @@
     ],
     "Calendar": [
         {
-            "name": "<%%manager_name%%>",
+            "name": "Blog",
             "module_type": "Calendar",
             "display_type": "Forum",
             "has_photo_gallery": "0",
-            "to_path": "/<%%manager_name%%>",
+            "to_path": "/Blog",
             "form_template": {
                 "file_path": "/_Assets/blog-form.tpl"
             },
-            "datatable_category_group": "/<%%manager_name%%> Categories",
+            "datatable_category_group": "/Blog Categories",
             "entries": []
         }
     ],
     "Datatable": [
         {
-            "name": "<%%manager_name%%> Authors",
+            "name": "Blog Authors",
             "module_type": "Datatable",
             "datatable_type": "Web",
-            "to_path": "/<%%manager_name%%> Authors",
+            "to_path": "/Blog Authors",
             "form_template": {
                 "file_path": "/_Assets/blog-author-form.tpl"
             },
@@ -40,8 +40,8 @@
     "Datatable_Category_Group": [
         {
             "module_type": "Datatable_Category_Group",
-            "name": "<%%manager_name%%> Categories",
-            "to_path": "/<%%manager_name%%> Categories",
+            "name": "Blog Categories",
+            "to_path": "/Blog Categories",
             "categories": [
                 {
                     "name": "blog-posts",
