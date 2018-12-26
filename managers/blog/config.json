@@ -9,8 +9,8 @@
 	"projectURL": "https://github.com/solodev/marketplace/managers/blog/",
 	"featuredImage": "featured-image.jpg",
 	"entryPoint": {	
-			"path": "/Blog",
-			"type": "Calendar"
+		"path": "/Blog",
+		"type": "Calendar"
 	},
 	"dependencies": {
 		"solodevCMS": "8.9"
