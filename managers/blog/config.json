@@ -7,7 +7,7 @@
         },
         {
             "name": "blog-author-form.tpl",
-            "from_path": "/_Assetsblog-author-form.tpl",
+            "from_path": "/_Assets/blog-author-form.tpl",
             "to_path": "/_Assets/blog-author-form.tpl"
         }
     ],
