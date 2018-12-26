@@ -1,0 +1,75 @@
+{
+    "Asset_File": [
+        {
+            "name": "blog-form.tpl",
+            "from_path": "/_Assets/blog-form.tpl",
+            "to_path": "/_Assets/blog-form.tpl"
+        },
+        {
+            "name": "blog-author-form.tpl",
+            "from_path": "/_Assetsblog-author-form.tpl",
+            "to_path": "/_Assets/blog-author-form.tpl"
+        }
+    ],
+    "Calendar": [
+        {
+            "name": "Blog",
+            "module_type": "Calendar",
+            "display_type": "Forum",
+            "has_photo_gallery": "0",
+            "to_path": "/Blog",
+            "form_template": {
+                "file_path": "/_Assets/blog-form.tpl"
+            },
+            "datatable_category_group": "/Blog Categories",
+            "entries": []
+        }
+    ],
+    "Datatable": [
+        {
+            "name": "Blog Authors",
+            "module_type": "Datatable",
+            "datatable_type": "Web",
+            "to_path": "/Blog Authors",
+            "form_template": {
+                "file_path": "/_Assets/blog-author-form.tpl"
+            },
+            "entries": []
+        }
+    ],
+    "Datatable_Category_Group": [
+        {
+            "module_type": "Datatable_Category_Group",
+            "name": "Blog Categories",
+            "to_path": "/Blog Categories",
+            "categories": [
+                {
+                    "name": "blog-posts",
+                    "title": "Blog Posts",
+                    "menu": null
+                },
+                {
+                    "name": "case-studies",
+                    "title": "Case Studies",
+                    "menu": null
+                },
+                {
+                    "name": "news",
+                    "title": "News",
+                    "menu": null
+                },
+                {
+                    "name": "press-releases",
+                    "title": "Press Releases",
+                    "menu": null
+                }
+            ]
+        }
+    ],
+    "Asset_Category": [
+        {
+            "from_path": "/_Assets",
+            "to_path": "/_Assets"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+	"name": "blog",
+	"title": "Blog"
+	"description": "A standard blog manager with additional categories and authors datatable.",
+	"version": "1.0",
+	"category": "Blog",
+	"author": "Solodev",
+	"authorWebsite": "https://www.solodev.com/",
+	"projectURL": "https://github.com/solodev/marketplace/managers/blog/",
+	"featuredImage": "https://raw.githubusercontent.com/solodev/marketplace/master/managers/blog/featured-image.jpg"
+}
