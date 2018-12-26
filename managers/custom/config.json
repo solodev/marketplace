@@ -16,29 +16,29 @@
 		"solodevCMS": "8.9"
 	},
 	"Asset_File": [
-			{
-					"name": "custom-form.tpl",
-					"from_path": "/_Assets/custom-form.tpl",
-					"to_path": "/_Assets/custom-form.tpl"
-			},
+		{
+			"name": "custom-form.tpl",
+			"from_path": "/_Assets/custom-form.tpl",
+			"to_path": "/_Assets/custom-form.tpl"
+		},
 	],
 	"Calendar": [
-			{
-					"name": "Custom",
-					"module_type": "Calendar",
-					"display_type": "Forum",
-					"has_photo_gallery": "0",
-					"to_path": "/Custom",
-					"form_template": {
-							"file_path": "/_Assets/custom-form.tpl"
-					},
-					"entries": []
-			}
+		{
+			"name": "Custom",
+			"module_type": "Calendar",
+			"display_type": "Forum",
+			"has_photo_gallery": "0",
+			"to_path": "/Custom",
+			"form_template": {
+				"file_path": "/_Assets/custom-form.tpl"
+			},
+			"entries": []
+		}
 	],
 	"Asset_Category": [
-			{
-					"from_path": "/_Assets",
-					"to_path": "/_Assets"
-			}
+		{
+			"from_path": "/_Assets",
+			"to_path": "/_Assets"
+		}
 	]
 }
