@@ -7,5 +7,6 @@ author: Solodev
 authorWebsite: https://www.solodev.com/
 projectURL: https://github.com/solodev/marketplace/managers/blog/
 featuredImage: featured-image.jpg
-entryPoint: /Blog
-entryPointType: Calendar
+entryPoint:
+    path: /Blog
+    type: Calendar
