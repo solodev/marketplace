@@ -1,6 +1,6 @@
 {
 	"name": "blog",
-	"title": "Blog"
+	"title": "Blog",
 	"description": "A standard blog manager with additional categories and authors datatable.",
 	"version": "1.0",
 	"category": "Blog",
