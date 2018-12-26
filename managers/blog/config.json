@@ -34,6 +34,7 @@
 			"display_type": "Forum",
 			"has_photo_gallery": "0",
 			"to_path": "/Blog",
+			"icon_type": "rss",
 			"form_template": {
 				"file_path": "/_Assets/blog-form.tpl"
 			},
