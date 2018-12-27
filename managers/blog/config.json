@@ -9,7 +9,7 @@
 	"projectURL": "https://github.com/solodev/marketplace/managers/blog/",
 	"featuredImage": "featured-image.jpg",
 	"entryPoint": {	
-		"path": "/Blog",
+		"path": "/<!manager_name!>",
 		"type": "Calendar"
 	},
 	"dependencies": {
@@ -29,25 +29,25 @@
 	],
 	"Calendar": [
 		{
-			"name": "Blog",
+			"name": "<!manager_name!>",
 			"module_type": "Calendar",
 			"display_type": "Forum",
 			"has_photo_gallery": "0",
-			"to_path": "/Blog",
+			"to_path": "/<!manager_name!>",
 			"icon_type": "rss",
 			"form_template": {
 				"file_path": "/_Assets/blog-form.tpl"
 			},
-			"datatable_category_group": "/Blog Categories",
+			"datatable_category_group": "/<!manager_name!> Categories",
 			"entries": []
 		}
 	],
 	"Datatable": [
 		{
-			"name": "Blog Authors",
+			"name": "<!manager_name!> Authors",
 			"module_type": "Datatable",
 			"datatable_type": "Web",
-			"to_path": "/Blog Authors",
+			"to_path": "/<!manager_name!> Authors",
 			"form_template": {
 					"file_path": "/_Assets/blog-author-form.tpl"
 			},
@@ -57,8 +57,8 @@
 	"Datatable_Category_Group": [
 		{
 			"module_type": "Datatable_Category_Group",
-			"name": "Blog Categories",
-			"to_path": "/Blog Categories",
+			"name": "<!manager_name!> Categories",
+			"to_path": "/<!manager_name!> Categories",
 			"categories": [
 				{
 					"name": "blog-posts",
