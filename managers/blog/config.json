@@ -22,21 +22,6 @@
 			"to_path": "/_Assets/blog-form.tpl"
 		}
 	],
-	"Calendar": [
-		{
-			"name": "<!manager_name!>",
-			"module_type": "Calendar",
-			"display_type": "Forum",
-			"has_photo_gallery": "0",
-			"to_path": "/<!manager_name!>",
-			"icon_type": "fas fa-rss-square",
-			"form_template": {
-				"file_path": "/_Assets/blog-form.tpl"
-			},
-			"datatable_category_group": "/test Categories",
-			"entries": []
-		}
-	],
 	"Datatable_Category_Group": [
 		{
 			"module_type": "Datatable_Category_Group",
@@ -64,6 +49,21 @@
 					"menu": null
 				}
 			]
+		}
+	],
+	"Calendar": [
+		{
+			"name": "<!manager_name!>",
+			"module_type": "Calendar",
+			"display_type": "Forum",
+			"has_photo_gallery": "0",
+			"to_path": "/<!manager_name!>",
+			"icon_type": "fas fa-rss-square",
+			"form_template": {
+				"file_path": "/_Assets/blog-form.tpl"
+			},
+			"datatable_category_group": "/test Categories",
+			"entries": []
 		}
 	],
 	"Asset_Category": [
