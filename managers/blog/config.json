@@ -33,15 +33,15 @@
 			"form_template": {
 				"file_path": "/_Assets/blog-form.tpl"
 			},
-			"datatable_category_group": "/<!manager_name!> Categories",
+			"datatable_category_group": "/test Categories",
 			"entries": []
 		}
 	],
 	"Datatable_Category_Group": [
 		{
 			"module_type": "Datatable_Category_Group",
-			"name": "<!manager_name!> Categories",
-			"to_path": "/<!manager_name!> Categories",
+			"name": "test Categories",
+			"to_path": "/test Categories",
 			"categories": [
 				{
 					"name": "blog-posts",
