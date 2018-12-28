@@ -1,24 +1,3 @@
-<script>
-  $(function() {
-    $("#resourceTypeSelect").change(function() {
-      if ($(this).val() == "Listing Image") {
-        $('#listingImage').show();
-        $('#rssImage').hide();
-      } else if ($(this).val() == "RSS Image") {
-        $('#rssImage').show();
-        $('#listingImage').hide();
-      } else {
-        $('#listingImage').hide();
-        $('#rssImage').hide();
-      }
-
-    });
-
-    $("#resourceTypeSelect").trigger("change");
-
-  });
-</script>
-
 <div class="panel-group">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -40,16 +19,6 @@
             <h2><label class="label-control" for="post_author">Post Author</label></h2>
             <select class="form-control" type="text" name="post_author">
               <option value="None">None</option>
-              <?php
-                $ref_datatable = new Datatable(3);
-                $ref_datatable_entries = $ref_datatable->getFilterDatatableEntries();
-                
-                sort($ref_datatable_entries);
-                
-                foreach($ref_datatable_entries as $oneEntry){
-                  echo '<option value="'.$oneEntry->author_name.'">'.$oneEntry->author_name.'</option>';
-                }
-              ?>
             </select>
           </div>
         </div>
@@ -226,5 +195,26 @@
     height: '600px',
     basePath: '/CK/',
     toolbar: 'WP'
+  });
+</script>
+
+<script>
+  $(function() {
+    $("#resourceTypeSelect").change(function() {
+      if ($(this).val() == "Listing Image") {
+        $('#listingImage').show();
+        $('#rssImage').hide();
+      } else if ($(this).val() == "RSS Image") {
+        $('#rssImage').show();
+        $('#listingImage').hide();
+      } else {
+        $('#listingImage').hide();
+        $('#rssImage').hide();
+      }
+
+    });
+
+    $("#resourceTypeSelect").trigger("change");
+
   });
 </script>

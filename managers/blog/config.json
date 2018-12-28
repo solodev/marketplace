@@ -42,18 +42,6 @@
 			"entries": []
 		}
 	],
-	"Datatable": [
-		{
-			"name": "<!manager_name!> Authors",
-			"module_type": "Datatable",
-			"datatable_type": "Web",
-			"to_path": "/<!manager_name!> Authors",
-			"form_template": {
-					"file_path": "/_Assets/blog-author-form.tpl"
-			},
-			"entries": []
-		}
-	],
 	"Datatable_Category_Group": [
 		{
 			"module_type": "Datatable_Category_Group",
