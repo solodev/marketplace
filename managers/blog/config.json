@@ -34,7 +34,7 @@
 			"display_type": "Forum",
 			"has_photo_gallery": "0",
 			"to_path": "/<!manager_name!>",
-			"icon_type": "rss",
+			"icon_type": "fas fa-rss-square",
 			"form_template": {
 				"file_path": "/_Assets/blog-form.tpl"
 			},
