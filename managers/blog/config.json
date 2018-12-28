@@ -20,7 +20,7 @@
 			"name": "blog-form.tpl",
 			"from_path": "/_Assets/blog-form.tpl",
 			"to_path": "/_Assets/blog-form.tpl"
-		},
+		}
 	],
 	"Calendar": [
 		{
