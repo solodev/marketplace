@@ -1,7 +1,7 @@
 {
 	"name": "blog",
 	"title": "Blog",
-	"description": "A standard blog manager with additional categories and authors datatable.",
+	"description": "A standard blog manager with categories.",
 	"version": 1,
 	"category": "Marketing",
 	"author": "Solodev",
@@ -21,11 +21,6 @@
 			"from_path": "/_Assets/blog-form.tpl",
 			"to_path": "/_Assets/blog-form.tpl"
 		},
-		{
-			"name": "blog-author-form.tpl",
-			"from_path": "/_Assets/blog-author-form.tpl",
-			"to_path": "/_Assets/blog-author-form.tpl"
-		}
 	],
 	"Calendar": [
 		{
