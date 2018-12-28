@@ -1,4 +1,20 @@
 {
+     "name": "updates",
+	"title": "Updates",
+	"description": "A standard update manager with categories.",
+	"version": 1,
+	"category": "Marketing",
+	"author": "Solodev",
+	"authorWebsite": "https://www.solodev.com/",
+	"projectURL": "https://github.com/solodev/marketplace/managers/updates/",
+	"featuredImage": "featured-image.jpg",
+	"entryPoint": {	
+		"path": "/<!manager_name!>",
+		"type": "Calendar"
+	},
+	"dependencies": {
+		"solodevCMS": "8.9"
+	},
     "Asset_File": [
         {
             "name": "news-form.tpl",
