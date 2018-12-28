@@ -1,9 +1,9 @@
 {
     "Asset_File": [
         {
-            "name": "0000007-0000213-news-form.tpl",
-            "from_path": "/_Assets/0000007-0000213-news-form.tpl",
-            "to_path": "/_Assets/0000007-0000213-news-form.tpl"
+            "name": "news-form.tpl",
+            "from_path": "/_Assets/news-form.tpl",
+            "to_path": "/_Assets/news-form.tpl"
         }
     ],
     "Calendar": [
@@ -14,7 +14,7 @@
             "has_photo_gallery": "0",
             "to_path": "/Updates",
             "form_template": {
-                "file_path": "/_Assets/0000007-0000213-news-form.tpl"
+                "file_path": "/_Assets/news-form.tpl"
             },
             "datatable_category_group": "/Updates Categories",
             "entries": []
