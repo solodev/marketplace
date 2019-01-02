@@ -31,7 +31,7 @@
         <a data-toggle="collapse" href="#collapseImages" aria-expanded="true">Image Uploads <span class="toggle" aria-hidden="true"></span></a>
       </h4>
     </div>
-    <div id="collapseImages" class="panel-collapse">
+    <div id="collapseImages" class="panel-collapse collapse show">
       <div class="panel-body">
         <div class="row">
           <div class="col-md-6">
@@ -69,7 +69,7 @@
         <a data-toggle="collapse" href="#collapseContent" aria-expanded="true">Intro/Excerpt<span class="toggle" aria-hidden="true"></span></a>
       </h4>
     </div>
-    <div id="collapseContent" class="panel-collapse">
+    <div id="collapseContent" class="panel-collapse collapse show">
       <div class="panel-body">
 
         <div class="row">
