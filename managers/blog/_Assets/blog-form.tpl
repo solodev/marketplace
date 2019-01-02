@@ -13,7 +13,13 @@
 } ?>
 
 <div class="row" style="padding: 0 0 15px;">
-	<div class="col-md-12">
+	<div class="col-md-3">
+		<select class="form-control" type="text" name="post_status">
+			<option value="Draft">Draft</option>
+			<option value="Published">Published</option>
+		</select>
+	</div>
+	<div class="col-md-9">
 		<input type="text" class="form-control" name="heading_title" id="heading_title" placeholder="Heading Overwrite">
 	</div>
 </div>
