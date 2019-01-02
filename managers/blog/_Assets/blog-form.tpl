@@ -1,30 +1,27 @@
-<div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapseStatus" aria-expanded="true">Post Status<span class="toggle" aria-hidden="true"></span></a>
-      </h4>
-    </div>
-    <div id="collapseStatus" class="panel-collapse collapse in">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-md-3">
-            <h2><label class="label-control" for="post_status">Post Status</label></h2>
-            <select class="form-control" type="text" name="post_status">
-              <option value="Draft">Draft</option>
-              <option value="Published">Published</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-            <h2><label class="label-control" for="post_author">Post Author</label></h2>
-            <select class="form-control" type="text" name="post_author">
-              <option value="None">None</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<?php
+  if(isset($dataVars['calendar_entry_id'])){     
+    $calendar_entry = new Calendar_Entry($dataVars['calendar_entry_id']);
+    if($calendar_entry->path) { 
+?>
+<div class="row" style="padding: 0 0 15px;">
+	<div class="col-md-12">
+			<strong>Entry URL:</strong> <a href="http://www.lunarxp.com<?= $calendar_entry->path ?>" target="_blank" style="color: #007bff;">http://www.lunarxp.com<?= $calendar_entry->path ?></a>
+	</div>
+</div>
+<?php 
+  } 
+} ?>
+
+<div class="row" style="padding: 0 0 15px;">
+	<div class="col-md-12">
+		<input type="text" class="form-control" name="heading_title" id="heading_title" placeholder="Heading Overwrite">
+	</div>
+</div>
+
+<div class="row" style="padding: 0 0 15px;">
+	<div class="col-md-12">
+		<textarea class="wysiwyg" name="post_content" id="post_content" required></textarea>
+	</div>
 </div>
 
 <div class="panel-group">
@@ -34,7 +31,7 @@
         <a data-toggle="collapse" href="#collapseImages" aria-expanded="true">Image Uploads <span class="toggle" aria-hidden="true"></span></a>
       </h4>
     </div>
-    <div id="collapseImages" class="panel-collapse collapse in">
+    <div id="collapseImages" class="panel-collapse">
       <div class="panel-body">
         <div class="row">
           <div class="col-md-6">
@@ -69,34 +66,20 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapseContent" aria-expanded="true">Post Content<span class="toggle" aria-hidden="true"></span></a>
+        <a data-toggle="collapse" href="#collapseContent" aria-expanded="true">Intro/Excerpt<span class="toggle" aria-hidden="true"></span></a>
       </h4>
     </div>
-    <div id="collapseContent" class="panel-collapse collapse in">
+    <div id="collapseContent" class="panel-collapse">
       <div class="panel-body">
+
         <div class="row">
           <div class="col-md-12">
-            <h2><label class="label-control" for="heading_title">Heading Overwrite</label></h2>
-            <p class="subText">(Optional) If specified, this will overwrite the article's title and become the main
-              heading.</p>
-            <input type="text" class="form-control" name="heading_title" id="heading_title">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <h2><label class="label-control" for="post_intro">Intro/Subtitle</label></h2>
-            <p class="subText">(Required) Content that appears before the Body Content and the introductory paragraph
-              on the blogroll.</p>
+            <h2><label class="label-control" for="post_intro">Intro/Excerpt</label></h2>
+            <p class="subText">(Required) Content that appears before the Body Content and the introductory paragraph on the blogroll.</p>
             <textarea class="form-control" name="post_intro" id="post_intro" required></textarea>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <h2><label class="label-control" for="post_content">Body Content</label></h2>
-            <p class="subText">(Required) The main content section for an article.</p>
-            <textarea class="wysiwyg" name="post_content" id="post_content" required></textarea>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
@@ -162,44 +145,6 @@
   </div>
 </div>
 
-<?php
-  if(isset($dataVars['calendar_entry_id'])){     
-    $calendar_entry = new Calendar_Entry($dataVars['calendar_entry_id']);
-    if($calendar_entry->path) { 
-?>
-<div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapseURL">Entry URL <span class="toggle" aria-hidden="true"></span></a>
-      </h4>
-    </div>
-    <div id="collapseURL" class="panel-collapse collapse in">
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="subText">You can access this blog entry at the following URL:</p>
-            <a href="http://lunar.solodev.org<?= $calendar_entry->path ?>" target="_blank">http://lunar.solodev.org<?= $calendar_entry->path ?></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<?php 
-  } 
-}
-?>
-
-<script>
-  $('.wysiwyg').ckeditor(function () {}, {
-    customConfig: '/CK/config.js',
-    height: '600px',
-    basePath: '/CK/',
-    toolbar: 'WP'
-  });
-</script>
-
 <script>
   $(function() {
     $("#resourceTypeSelect").change(function() {
@@ -218,5 +163,14 @@
 
     $("#resourceTypeSelect").trigger("change");
 
+  });
+</script>
+
+<script>
+  $('.wysiwyg').ckeditor(function () {}, {
+    customConfig: '/CK/config.js',
+    height: '600px',
+    basePath: '/CK/',
+    toolbar: 'WP'
   });
 </script>
