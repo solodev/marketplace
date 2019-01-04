@@ -1,44 +1,38 @@
 {
-	"name": "custom",
-	"title": "Custom",
-	"description": "The default/starter manager for custom selections.",
-	"version": 1,
-	"category": "Information Technology",
-	"author": "Solodev",
-	"authorWebsite": "https://www.solodev.com/",
-	"projectURL": "https://github.com/solodev/marketplace/managers/custom/",
-	"featuredImage": "featured-image.jpg",
-	"entryPoint": {
-		"path": "/<!manager_name!>",
-		"type": "Calendar"
-	},
-	"dependencies": {
-		"solodevCMS": "8.9"
-	},
-	"Asset_File": [
-		{
-			"name": "custom-form.tpl",
-			"from_path": "/_Assets/custom-form.tpl",
-			"to_path": "/_Assets/custom-form.tpl"
-		}
-	],
-	"Calendar": [
-		{
-			"name": "<!manager_name!>",
-			"module_type": "Calendar",
-			"display_type": "Forum",
-			"has_photo_gallery": "0",
-			"to_path": "/<!manager_name!>",
-			"form_template": {
-				"file_path": "/_Assets/custom-form.tpl"
-			},
-			"entries": []
-		}
-	],
-	"Asset_Category": [
-		{
-			"from_path": "/_Assets",
-			"to_path": "/_Assets"
-		}
-	]
+  "name": "custom",
+  "title": "Custom",
+  "description": "Get started with a custom manager to fit your unique needs. Custom managers give you the freedom to create a module unique to your needs.",
+  "version": 1,
+  "category": "Information Technology",
+  "author": "Solodev",
+  "authorWebsite": "https://www.solodev.com/",
+  "projectURL": "https://github.com/solodev/marketplace/managers/custom/",
+  "featuredImage": "featured-image.jpg",
+  "entryPoint": {
+    "path": "/<!manager_name!>",
+    "type": "Calendar"
+  },
+  "dependencies": {
+    "solodevCMS": "8.9"
+  },
+  "Asset_File": [{
+    "name": "custom-form.tpl",
+    "from_path": "/_Assets/custom-form.tpl",
+    "to_path": "/_Assets/custom-form.tpl"
+  }],
+  "Calendar": [{
+    "name": "<!manager_name!>",
+    "module_type": "Calendar",
+    "display_type": "Forum",
+    "has_photo_gallery": "0",
+    "to_path": "/<!manager_name!>",
+    "form_template": {
+      "file_path": "/_Assets/custom-form.tpl"
+    },
+    "entries": []
+  }],
+  "Asset_Category": [{
+    "from_path": "/_Assets",
+    "to_path": "/_Assets"
+  }]
 }

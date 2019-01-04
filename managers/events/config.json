@@ -1,68 +1,58 @@
-{   "name": "events",
-	"title": "Events",
-	"description": "A standard event manager with categories.",
-	"version": 1,
-	"category": "Marketing",
-	"author": "Solodev",
-	"authorWebsite": "https://www.solodev.com/",
-	"projectURL": "https://github.com/solodev/marketplace/managers/events/",
-	"featuredImage": "featured-image.jpg",
-	"entryPoint": {	
-		"path": "/<!manager_name!>",
-		"type": "Calendar"
-	},
-	"dependencies": {
-		"solodevCMS": "8.9"
-	},
-    "Asset_File": [
-        {
-            "name": "events-form.tpl",
-            "from_path": "/_Assets/events-form.tpl",
-            "to_path": "/_Assets/events-form.tpl"
-        }
-    ],
-    "Datatable_Category_Group": [
-        {
-            "module_type": "Datatable_Category_Group",
-            "name": "Event Categories",
-            "to_path": "/Event Categories",
-            "categories": [
-                {
-                    "name": "conference",
-                    "title": "Conference",
-                    "menu": null
-                },
-                {
-                    "name": "launch",
-                    "title": "Launch",
-                    "menu": null
-                },
-                {
-                    "name": "training",
-                    "title": "Training",
-                    "menu": null
-                }
-            ]
-        }
-    ],
-    "Calendar": [
-        {
-            "name": "Events",
-            "module_type": "Calendar",
-            "display_type": "Calendar",
-            "has_photo_gallery": "0",
-            "to_path": "/Events",
-            "form_template": {
-                "file_path": "/_Assets/events-form.tpl"
-            },
-            "datatable_category_group": "/Event Categories",
-            "entries": []
-        }
-    ],
-    "Asset_Category": [
-        {
-            "from_path": "/_Assets",
-            "to_path": "/_Assets"
-        }
-    ]
+{
+  "name": "events",
+  "title": "Events",
+  "description": "With the Events Manager, no one will miss another event with scheduling capabilities, a prominent description, and the event location.",
+  "version": 1,
+  "category": "Marketing",
+  "author": "Solodev",
+  "authorWebsite": "https://www.solodev.com/",
+  "projectURL": "https://github.com/solodev/marketplace/managers/events/",
+  "featuredImage": "featured-image.jpg",
+  "entryPoint": {
+    "path": "/<!manager_name!>",
+    "type": "Calendar"
+  },
+  "dependencies": {
+    "solodevCMS": "8.9"
+  },
+  "Asset_File": [{
+    "name": "events-form.tpl",
+    "from_path": "/_Assets/events-form.tpl",
+    "to_path": "/_Assets/events-form.tpl"
+  }],
+  "Calendar": [{
+    "name": "<!manager_name!>",
+    "module_type": "Calendar",
+    "display_type": "Calendar",
+    "has_photo_gallery": "0",
+    "to_path": "/<!manager_name!>",
+    "icon_type": "far fa-calendar-alt",
+    "form_template": {
+      "file_path": "/_Assets/events-form.tpl"
+    },
+    "datatable_category_group": "/<!manager_name!> Categories",
+    "entries": []
+  }],
+  "Datatable_Category_Group": [{
+    "module_type": "Datatable_Category_Group",
+    "name": "<!manager_name!> Categories",
+    "to_path": "/<!manager_name!> Categories",
+    "categories": [{
+      "name": "conference",
+      "title": "Conference",
+      "menu": null
+    }, {
+      "name": "launch",
+      "title": "Launch",
+      "menu": null
+    }, {
+      "name": "training",
+      "title": "Training",
+      "menu": null
+    }]
+  }],
+  "Asset_Category": [{
+    "from_path": "/_Assets",
+    "to_path": "/_Assets"
+  }]
 }
