@@ -1,12 +1,12 @@
 {
-  "name": "updates",
-  "title": "Updates",
-  "description": "Keep your users informed about your company happenings or important press releases with the Updates/News Manager.",
+  "name": "news",
+  "title": "News",
+  "description": "Keep your users informed about your company happenings or important press releases with the News Manager.",
   "version": 1,
   "category": "Marketing",
   "author": "Solodev",
   "authorWebsite": "https://www.solodev.com/",
-  "projectURL": "https://github.com/solodev/marketplace/managers/updates/",
+  "projectURL": "https://github.com/solodev/marketplace/managers/news/",
   "featuredImage": "featured-image.jpg",
   "entryPoint": {
     "path": "/<!manager_name!>",
