@@ -9,7 +9,7 @@
 	"projectURL": "https://github.com/solodev/marketplace/managers/custom/",
 	"featuredImage": "featured-image.jpg",
 	"entryPoint": {
-		"path": "/Custom",
+		"path": "/<!manager_name!>",
 		"type": "Calendar"
 	},
 	"dependencies": {
@@ -24,11 +24,11 @@
 	],
 	"Calendar": [
 		{
-			"name": "Custom",
+			"name": "<!manager_name!>",
 			"module_type": "Calendar",
 			"display_type": "Forum",
 			"has_photo_gallery": "0",
-			"to_path": "/Custom",
+			"to_path": "/<!manager_name!>",
 			"form_template": {
 				"file_path": "/_Assets/custom-form.tpl"
 			},
