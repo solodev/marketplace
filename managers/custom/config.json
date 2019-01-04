@@ -20,7 +20,7 @@
 			"name": "custom-form.tpl",
 			"from_path": "/_Assets/custom-form.tpl",
 			"to_path": "/_Assets/custom-form.tpl"
-		},
+		}
 	],
 	"Calendar": [
 		{
