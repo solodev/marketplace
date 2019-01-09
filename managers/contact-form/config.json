@@ -17,13 +17,13 @@
   },
   "Asset_File": [{
     "name": "careers-form.tpl",
-    "from_path": "/_Assets/contact-us-form.tpl",
-    "to_path": "/_Assets/contact-usform.tpl"
+    "from_path": "/_Assets/contact-form.tpl",
+    "to_path": "/_Assets/contact-form.tpl"
   },
 	{
     "name": "contact-us-thanks.tpl",
-    "from_path": "/_Assets/contact-us-thanks.tpl",
-    "to_path": "/_Assets/contact-us-thanks.tpl"
+    "from_path": "/_Assets/contact-thanks.tpl",
+    "to_path": "/_Assets/contact-thanks.tpl"
   }],
   "Calendar": [{
     "name": "<!manager_name!>",
@@ -32,10 +32,10 @@
     "to_path": "/<!manager_name!>",
     "icon_type": "fab fa-wpforms",
     "form_template": {
-      "file_path": "/_Assets/contact-us-form.tpl"
+      "file_path": "/_Assets/contact-form.tpl"
     },
 		"return_template": {
-				"file_path": "/_Assets/contact-us-form.tpl"
+				"file_path": "/_Assets/contact-thanks.tpl"
 		}
   }],
   "Asset_Category": [{
