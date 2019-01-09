@@ -25,7 +25,7 @@
     "from_path": "/_Assets/contact-thanks.tpl",
     "to_path": "/_Assets/contact-thanks.tpl"
   }],
-  "Calendar": [{
+  "Datatable": [{
     "name": "<!manager_name!>",
     "module_type": "Datatable",
     "datatable_type": "Form",
