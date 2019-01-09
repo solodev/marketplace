@@ -36,7 +36,8 @@
     },
 		"return_template": {
 				"file_path": "/_Assets/contact-thanks.tpl"
-		}
+		},
+    "entries": []
   }],
   "Asset_Category": [{
     "from_path": "/_Assets",
