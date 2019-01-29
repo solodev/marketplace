@@ -32,7 +32,7 @@
     </header>
     <div id="collapseImages" class="collapse show" aria-labelledby="headingImages" data-parent="#accordionImages">
       <div class="card-body">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-4" id="listingImage">
             <h3 class="card-title"><label class="control-label" for="event_image">Event Image</label></h3>
             <p class="card-subtitle my-1">Dimensions: 796px x 333px.</p>
@@ -122,7 +122,7 @@
           <div class="col-md-12">
             <h3 class="card-title"><label class="control-label" for="post_content">Body Content</label></h3>
             <p class="card-subtitle">(Required) The main content section for an article.</p>
-            <textarea class="form-control wysiwyg" id="post_content" name="post_content" required=""></textarea>
+            <textarea class="form-control wysiwyg-wp" id="post_content" name="post_content" required=""></textarea>
           </div>
         </div>
       </div>
