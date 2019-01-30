@@ -22,6 +22,42 @@
   </section>
 </div>
 
+<div id="accordionEventInfo">
+  <section class="card mt-2">
+    <header class="card-header" id="headingEventInfo" data-toggle="collapse" data-target="#collapseEventInfo" aria-expanded="true" aria-controls="collapseEventInfo">
+      <h2 class="card-title">Event Information</h2>
+      <div class="panel-actions">
+        <a class="panel-action panel-action-toggle" href="#"></a>
+      </div>
+    </header>
+    <div id="collapseEventInfo" class="collapse show" aria-labelledby="headingEventInfo" data-parent="#accordionEventInfo">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <h3 class="card-title"><label class="control-label" for="heading_title">Heading Overwrite</label></h3>
+            <p class="card-subtitle">(Optional) If specified, this will overwrite the article's title and become the main heading.</p>
+            <input class="form-control" id="heading_title" name="heading_title" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <h3 class="card-title"><label class="control-label" for="post_intro">Intro/Subtitle</label></h3>
+            <p class="card-subtitle">(Required) Content that appears before the Body Content and the introductory paragraph on the eventroll.</p>
+            <textarea class="form-control" id="post_intro" name="post_intro" required=""></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="card-title"><label class="control-label" for="post_content">Body Content</label></h3>
+            <p class="card-subtitle">(Required) The main content section for an article.</p>
+            <textarea class="form-control wysiwyg-wp" id="post_content" name="post_content" required=""></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 <div id="accordionImages">
   <section class="card mt-2">
     <header class="card-header" id="headingImages" data-toggle="collapse" data-target="#collapseImages" aria-expanded="true" aria-controls="collapseImages">
@@ -38,9 +74,11 @@
             <p class="card-subtitle my-1">Dimensions: 796px x 333px.</p>
             <input class="file_upload" id="event_image" name="event_image" required="" type="file" />
           </div>
-          <div class="col-md-3" id="rssImage">
-            <input id="event_featured" name="event_featured" required="" type="checkbox" />
-            <label class="control-label" for="event_featured">Event Featured</label>
+          <div class="col-md-3 position-relative" id="rssImage">
+            <div class="checkbox-custom checkbox-default checkbox-inline">
+              <input id="event_featured" name="event_featured" required="" type="checkbox" />
+              <label class="control-label" for="event_featured">Event Featured</label>
+            </div>
           </div>
           <div class="col-md-5">
             <h3 class="card-title"><label class="control-label" for="event_archived">Archived?</label></h3>
@@ -94,42 +132,6 @@
   </section>
 </div>
 
-<div id="accordionEventInfo">
-  <section class="card mt-2">
-    <header class="card-header" id="headingEventInfo" data-toggle="collapse" data-target="#collapseEventInfo" aria-expanded="true" aria-controls="collapseEventInfo">
-      <h2 class="card-title">Event Information</h2>
-      <div class="panel-actions">
-        <a class="panel-action panel-action-toggle" href="#"></a>
-      </div>
-    </header>
-    <div id="collapseEventInfo" class="collapse show" aria-labelledby="headingEventInfo" data-parent="#accordionEventInfo">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-12 form-group">
-            <h3 class="card-title"><label class="control-label" for="heading_title">Heading Overwrite</label></h3>
-            <p class="card-subtitle">(Optional) If specified, this will overwrite the article's title and become the main heading.</p>
-            <input class="form-control" id="heading_title" name="heading_title" type="text" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 form-group">
-            <h3 class="card-title"><label class="control-label" for="post_intro">Intro/Subtitle</label></h3>
-            <p class="card-subtitle">(Required) Content that appears before the Body Content and the introductory paragraph on the eventroll.</p>
-            <textarea class="form-control" id="post_intro" name="post_intro" required=""></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="card-title"><label class="control-label" for="post_content">Body Content</label></h3>
-            <p class="card-subtitle">(Required) The main content section for an article.</p>
-            <textarea class="form-control wysiwyg-wp" id="post_content" name="post_content" required=""></textarea>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
 <div id="accordionMetaData">
   <section class="card mt-2">
     <header class="card-header" id="headingMetaData" data-toggle="collapse" data-target="#collapseMetaData" aria-expanded="true" aria-controls="collapseMetaData">
@@ -143,16 +145,14 @@
         <div class="row">
           <div class="col-md-12 form-group">
             <h3 class="card-title"><label name="meta_title">Meta Title</label></h3>
-            <p class="card-subtitle">(Optional) Include a custom META Title that will show in your browser tab and in the
-              page's source code.</p>
+            <p class="card-subtitle">(Optional) Include a custom META Title that will show in your browser tab and in the page's source code.</p>
             <input type="text" class="form-control" name="meta_title" id="meta_title">
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 form-group">
             <h3 class="card-title"><label name="meta_description">Meta Description</label></h3>
-            <p class="card-subtitle">(Optional) Include a custom META Description that search engines will index. 50-160
-              Characters</p>
+            <p class="card-subtitle">(Optional) Include a custom META Description that search engines will index. 50-160 Characters</p>
             <textarea class="form-control" id="meta_description" name="meta_description"></textarea>
           </div>
         </div>
@@ -176,7 +176,7 @@
         <a class="panel-action panel-action-toggle" href="#"></a>
       </div>
     </header>
-    <div id="collapseAdvanced" class="collapse show" aria-labelledby="headingAdvanced" data-parent="#accordionAdvanced">
+    <div id="collapseAdvanced" class="collapse" aria-labelledby="headingAdvanced" data-parent="#accordionAdvanced">
       <div class="card-body">
         <div class="row">
           <div class="col-md-12">
@@ -189,3 +189,8 @@
     </div>
   </section>
 </div>
+
+<script>
+applyCodemirror($('#post_javascript')[0]);
+$('.CodeMirror').addClass('h-xs-150p');
+</script>
