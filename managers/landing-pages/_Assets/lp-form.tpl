@@ -45,7 +45,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-3">
-            <h3 class="card-title"><label class="control-label" for="post_status">anding Page Status</label></h3>
+            <h3 class="card-title"><label class="control-label" for="post_status">Landing Page Status</label></h3>
             <select class="form-control" type="text" name="post_status">
               <option value="Draft">Draft</option>
               <option value="Published">Published</option>
@@ -99,7 +99,7 @@
         <a class="panel-action panel-action-toggle" href="#"></a>
       </div>
     </header>
-    <div id="collapseFormSettings" class="collapse show" aria-labelledby="headingFormSettings" data-parent="#accordionFormSettings">
+    <div id="collapseFormSettings" class="collapse" aria-labelledby="headingFormSettings" data-parent="#accordionFormSettings">
       <div class="card-body">
         <div class="row">
           <div class="col-md-4">
@@ -256,7 +256,7 @@
         <a class="panel-action panel-action-toggle" href="#"></a>
       </div>
     </header>
-    <div id="collapseBottomTitle" class="collapse show" aria-labelledby="headingBottomTitle" data-parent="#accordionBottomTitle">
+    <div id="collapseBottomTitle" class="collapse" aria-labelledby="headingBottomTitle" data-parent="#accordionBottomTitle">
       <div class="card-body">
         <div class="row">
           <div class="col-md-6 form-group">
