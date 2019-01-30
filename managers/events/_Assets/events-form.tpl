@@ -10,7 +10,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-3">
-            <h3 class="card-title"><label class="control-label" for="post_status">Post Status</label></h3>
+            <h3 class="card-title"><label class="control-label" for="post_status">Events Post Status</label></h3>
             <select class="form-control" type="text" name="post_status">
               <option value="Draft">Draft</option>
               <option value="Published">Published</option>
