@@ -36,7 +36,7 @@
 <div id="accordionPostStatus">
   <section class="card">
     <header class="card-header" id="headingPostStatus" data-toggle="collapse" data-target="#collapsePostStatus" aria-expanded="true" aria-controls="collapsePostStatus">
-      <h2 class="card-title">Post Status</h2>
+      <h2 class="card-title">Landing Page Status</h2>
       <div class="panel-actions">
         <a class="panel-action panel-action-toggle" href="#"></a>
       </div>
@@ -45,7 +45,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-3">
-            <h3 class="card-title"><label class="control-label" for="post_status">Post Status</label></h3>
+            <h3 class="card-title"><label class="control-label" for="post_status">anding Page Status</label></h3>
             <select class="form-control" type="text" name="post_status">
               <option value="Draft">Draft</option>
               <option value="Published">Published</option>
@@ -91,15 +91,48 @@
   </section>
 </div>
 
-<div id="accordionMiddleSection">
+<div id="accordionFormSettings">
   <section class="card mt-2">
-    <header class="card-header" id="headingMiddleSection" data-toggle="collapse" data-target="#collapseMiddleSection" aria-expanded="true" aria-controls="collapseMiddleSection">
-      <h2 class="card-title">Middle Section Content</h2>
+    <header class="card-header" id="headingFormSettings" data-toggle="collapse" data-target="#collapseFormSettings" aria-expanded="true" aria-controls="collapseFormSettings">
+      <h2 class="card-title">Form Settings</h2>
       <div class="panel-actions">
         <a class="panel-action panel-action-toggle" href="#"></a>
       </div>
     </header>
-    <div id="collapseMiddleSection" class="collapse show" aria-labelledby="headingMiddleSection" data-parent="#accordionMiddleSection">
+    <div id="collapseFormSettings" class="collapse show" aria-labelledby="headingFormSettings" data-parent="#accordionFormSettings">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <input type="hidden" id="datatable_override" name="datatable_override" value="3" />
+            <h3 class="card-title"><label class="control-label" for="formtitle">Lead Form Title</label></h3>
+            <p class="card-subtitle">(Required) The text that appears above the form fields</p>
+            <input class="form-control" id="formtitle" name="formtitle" type="text" />
+          </div>
+          <div class="col-md-4">
+            <h3 class="card-title"><label class="control-label" for="formtext">Lead Form Call to Action</label></h3>
+            <p class="card-subtitle">(Required) The text that appears in the button</p>
+            <input class="form-control" id="formtext" name="formtext" type="text" />
+          </div>
+          <div class="col-md-4">
+            <h3 class="card-title"><label class="control-label" for="formcall">Lead Form Action</label></h3>
+            <p class="card-subtitle">Where the form will go upon submit (ex: A thank you page)</p>
+            <input class="form-control" id="formcall" name="formcall" type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="accordionMiddleSection">
+  <section class="card mt-2">
+    <header class="card-header" id="headingMiddleSection" data-toggle="collapse" data-target="#collapseMiddleSection" aria-expanded="true" aria-controls="collapseMiddleSection">
+      <h2 class="card-title">(Optional) Long Version Content</h2>
+      <div class="panel-actions">
+        <a class="panel-action panel-action-toggle" href="#"></a>
+      </div>
+    </header>
+    <div id="collapseMiddleSection" class="collapse" aria-labelledby="headingMiddleSection" data-parent="#accordionMiddleSection">
       <div class="card-body">
         <div class="row">
           <div class="col-md-8 form-group">
@@ -144,11 +177,12 @@
         <div class="row">
           <div class="col-md-4 form-group">
             <h3 class="card-title"><label class="control-label" for="box_1_heading">Box 1 Heading</label></h3>
+            <p class="card-subtitle">Title of Box 1</p>
             <input class="form-control" id="box_1_heading" name="box_1_heading" type="text">
           </div>
           <div class="col-md-4 form-group">
             <h3 class="card-title"><label class="control-label" for="box_1_icon">Box 1 Icon</label></h3>
-            <p class="card-subtitle">Enter the <a target="_blank" href="https://fontawesome.com/icons">Font Awesome 5</a> classes your icon uses. Ex: fab fa-facebook-f</p>
+            <p class="card-subtitle">Enter the <a target="_blank" href="https://fontawesome.com/icons" class="text-scarlet">Font Awesome 5</a> class your icon uses. Ex: fab fa-facebook-f</p>
             <input class="form-control" id="box_1_icon" name="box_1_icon" type="text">
           </div>
           <div class="col-md-4 form-group">
@@ -160,11 +194,12 @@
         <div class="row">
           <div class="col-md-4 form-group">
             <h3 class="card-title"><label class="control-label" for="box_2_heading">Box 2 Heading</label></h3>
+            <p class="card-subtitle">Title of Box 2</p>
             <input class="form-control" id="box_2_heading" name="box_2_heading" type="text">
           </div>
           <div class="col-md-4 form-group">
             <h3 class="card-title"><label class="control-label" for="box_2_icon">Box 2 Icon</label></h3>
-            <p class="card-subtitle">Enter the <a target="_blank" href="https://fontawesome.com/icons">Font Awesome 5</a> classes your icon uses. Ex: fab fa-facebook-f</p>
+            <p class="card-subtitle">Enter the <a target="_blank" href="https://fontawesome.com/icons" class="text-scarlet">Font Awesome 5</a> class your icon uses. Ex: fab fa-facebook-f</p>
             <input class="form-control" id="box_2_icon" name="box_2_icon" type="text">
           </div>
           <div class="col-md-4 form-group">
@@ -176,11 +211,12 @@
         <div class="row">
           <div class="col-md-4 form-group">
             <h3 class="card-title"><label class="control-label" for="box_3_heading">Box 3 Heading</label></h3>
+            <p class="card-subtitle">Title of Box 3</p>
             <input class="form-control" id="box_3_heading" name="box_3_heading" type="text">
           </div>
           <div class="col-md-4 form-group">
             <h3 class="czard-title"><label class="control-label" for="box_3_icon">Box 3 Icon</label></h3>
-            <p class="card-subtitle">Enter the <a target="_blank" href="https://fontawesome.com/icons">Font Awesome 5</a> classes your icon uses. Ex: fab fa-facebook-f</p>
+            <p class="card-subtitle">Enter the <a target="_blank" href="https://fontawesome.com/icons" class="text-scarlet">Font Awesome 5</a> class your icon uses. Ex: fab fa-facebook-f</p>
             <input class="form-control" id="box_3_icon" name="box_3_icon" type="text">
           </div>
           <div class="col-md-4 form-group">
@@ -192,11 +228,12 @@
         <div class="row">
           <div class="col-md-4">
             <h3 class="card-title"><label class="control-label" for="box_4_heading">Box 4 Heading</label></h3>
+            <p class="card-subtitle">Title of Box 4</p>
             <input class="form-control" id="box_4_heading" name="box_4_heading" type="text">
           </div>
           <div class="col-md-4">
             <h3 class="card-title"><label class="control-label" for="box_4_icon">Box 4 Icon</label></h3>
-            <p class="card-subtitle">Enter the <a target="_blank" href="https://fontawesome.com/icons">Font Awesome 5</a> classes your icon uses. Ex: fab fa-facebook-f</p>
+            <p class="card-subtitle">Enter the <a target="_blank" href="https://fontawesome.com/icons" class="text-scarlet">Font Awesome 5</a> class your icon uses. Ex: fab fa-facebook-f</p>
             <input class="form-control" id="box_4_icon" name="box_4_icon" type="text">
           </div>
           <div class="col-md-4">
@@ -214,7 +251,7 @@
 <div id="accordionBottomTitle">
   <section class="card mt-2">
     <header class="card-header" id="headingBottomTitle" data-toggle="collapse" data-target="#collapseBottomTitle" aria-expanded="true" aria-controls="collapseBottomTitle">
-      <h2 class="card-title">Bottom Title</h2>
+      <h2 class="card-title">Bottom Tile</h2>
       <div class="panel-actions">
         <a class="panel-action panel-action-toggle" href="#"></a>
       </div>
@@ -222,17 +259,19 @@
     <div id="collapseBottomTitle" class="collapse show" aria-labelledby="headingBottomTitle" data-parent="#accordionBottomTitle">
       <div class="card-body">
         <div class="row">
-          <div class="col-md-4 form-group">
+          <div class="col-md-6 form-group">
             <h3 class="card-title"><label class="control-label" for="bottom_tile_title">Bottom Tile Title</label></h3>
             <input class="form-control" id="bottom_tile_title" name="bottom_tile_title" type="text" />
           </div>
-          <div class="col-md-4 form-group">
-            <h3 class="card-title"><label class="control-label" for="bottom_tile_text">Bottom Tile Text</label></h3>
-            <input class="form-control" id="bottom_tile_text" name="bottom_tile_text" type="text" />
-          </div>
-          <div class="col-md-4 form-group">
+          <div class="col-md-6 form-group">
             <h3 class="card-title"><label class="control-label" for="bottom_tile_image">Bottom Tile Image</label></h3>
             <input class="form-control" id="bottom_tile_image" name="bottom_tile_image" type="file" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <h3 class="card-title"><label class="control-label" for="bottom_tile_text">Bottom Tile Text</label></h3>
+            <textarea class="form-control wysiwyg-wp" name="bottom_tile_text" id="bottom_tile_text"></textarea>
           </div>
         </div>
         <div class="row">
@@ -250,39 +289,6 @@
   </section>
 </div>
 <!-- End Bottom Section -->
-
-<div id="accordionFormSettings">
-  <section class="card mt-2">
-    <header class="card-header" id="headingFormSettings" data-toggle="collapse" data-target="#collapseFormSettings" aria-expanded="true" aria-controls="collapseFormSettings">
-      <h2 class="card-title">Form Settings</h2>
-      <div class="panel-actions">
-        <a class="panel-action panel-action-toggle" href="#"></a>
-      </div>
-    </header>
-    <div id="collapseFormSettings" class="collapse show" aria-labelledby="headingFormSettings" data-parent="#accordionFormSettings">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-4">
-            <input type="hidden" id="datatable_override" name="datatable_override" value="3" />
-            <h3 class="card-title"><label class="control-label" for="formtitle">Lead Form Title</label></h3>
-            <p class="card-subtitle">(Appears Above Form)</p>
-            <input class="form-control" id="formtitle" name="formtitle" type="text" />
-          </div>
-          <div class="col-md-4">
-            <h3 class="card-title"><label class="control-label" for="formcall">Lead Form Action</label></h3>
-            <p class="card-subtitle">Where the form will go upon submit(ex: A Thank You Page)</p>
-            <input class="form-control" id="formcall" name="formcall" type="text" />
-          </div>
-          <div class="col-md-4">
-            <h3 class="card-title"><label class="control-label" for="formtext">Lead Form Call to Action</label></h3>
-            <p class="card-subtitle">(Appears In Button)</p>
-            <input class="form-control" id="formtext" name="formtext" type="text" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
 
 <div id="accordionMetaData">
   <section class="card mt-2">
