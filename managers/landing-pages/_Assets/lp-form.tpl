@@ -58,7 +58,7 @@
 </div>
 
 <div id="accordionContent">
-  <section class="card">
+  <section class="card mt-2">
     <header class="card-header" id="headingContent" data-toggle="collapse" data-target="#collapseContent" aria-expanded="true" aria-controls="collapseContent">
       <h2 class="card-title">Landing Page Content</h2>
       <div class="panel-actions">
@@ -83,7 +83,7 @@
           <div class="col-md-12">
             <h3 class="card-title"><label class="control-label" for="landing_page_content">Landing Page Content</label></h3>
             <p class="card-subtitle">(Required) Main content for the Landing Page.</p>
-            <textarea class="form-control wysiwyg" id="landing_page_content" name="landing_page_content"></textarea>
+            <textarea class="form-control wysiwyg-wp" id="landing_page_content" name="landing_page_content"></textarea>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
 </div>
 
 <div id="accordionMiddleSection">
-  <section class="card">
+  <section class="card mt-2">
     <header class="card-header" id="headingMiddleSection" data-toggle="collapse" data-target="#collapseMiddleSection" aria-expanded="true" aria-controls="collapseMiddleSection">
       <h2 class="card-title">Middle Section Content</h2>
       <div class="panel-actions">
@@ -212,7 +212,7 @@
 
 <!-- Begin Bottom Section -->
 <div id="accordionBottomTitle">
-  <section class="card">
+  <section class="card mt-2">
     <header class="card-header" id="headingBottomTitle" data-toggle="collapse" data-target="#collapseBottomTitle" aria-expanded="true" aria-controls="collapseBottomTitle">
       <h2 class="card-title">Bottom Title</h2>
       <div class="panel-actions">
@@ -252,7 +252,7 @@
 <!-- End Bottom Section -->
 
 <div id="accordionFormSettings">
-  <section class="card">
+  <section class="card mt-2">
     <header class="card-header" id="headingFormSettings" data-toggle="collapse" data-target="#collapseFormSettings" aria-expanded="true" aria-controls="collapseFormSettings">
       <h2 class="card-title">Form Settings</h2>
       <div class="panel-actions">
@@ -330,7 +330,7 @@
         <a class="panel-action panel-action-toggle" href="#"></a>
       </div>
     </header>
-    <div id="collapseAdvanced" class="collapse show" aria-labelledby="headingAdvanced" data-parent="#accordionAdvanced">
+    <div id="collapseAdvanced" class="collapse" aria-labelledby="headingAdvanced" data-parent="#accordionAdvanced">
       <div class="card-body">
         <div class="row">
           <div class="col-md-12">
@@ -343,3 +343,8 @@
     </div>
   </section>
 </div>
+
+<script>
+applyCodemirror($('#post_javascript')[0]);
+$('.CodeMirror').addClass('h-xs-150p');
+</script>
