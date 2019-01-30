@@ -55,21 +55,21 @@
     <div id="collapseIntro" class="collapse show" aria-labelledby="headingIntro" data-parent="#accordionIntro">
       <div class="card-body">
         <div class="row">
-          <div class="col-md-6" id="listingImage">
+          <div class="col-md-6 form-group" id="listingImage">
             <h3 class="card-title"><label class="label-control" for="news_image">News Image</label></h3>
             <p class="card-subtitle">(Optional) The image that appears in the news article and normal news feed.</p>
             <input class="file_upload" id="news_image" name="news_image" type="file" />
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 form-group">
             <h3 class="card-title"><label class="label-control" for="news_detail">News Detail</label></h3>
             <select class="form-control" id="news_detail" name="news_detail">
               <option value="internalPage">Internal Page</option>
               <option value="externalLink">External Link</option>
             </select>
           </div>
-          <div class="col-md-6" id="postLink" style="display: none;">
+          <div class="col-md-6 form-group" id="postLink" style="display: none;">
             <h3 class="card-title"><label class="label-control" for="site_link">Link</label></h3>
             <input class="form-control" id="site_link" name="site_link" type="text" />
           </div>
@@ -97,7 +97,7 @@
     <div id="collapseContent" class="collapse show" aria-labelledby="headingContent" data-parent="#accordionContent">
       <div class="card-body">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 form-group">
             <h3 class="card-title"><label class="label-control" for="heading_title">Heading Overwrite</label></h3>
             <p class="card-subtitle">(Optional) If specified, this will overwrite the article's title and become the main
               heading.</p>
