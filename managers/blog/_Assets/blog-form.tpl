@@ -31,7 +31,7 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-3">
-            <h3 class="card-title"><label class="control-label" for="post_status">Post Status</label></h3>
+            <h3 class="card-title"><label class="control-label" for="post_status">Blog Post Status</label></h3>
             <select class="form-control" type="text" name="post_status">
               <option value="Draft">Draft</option>
               <option value="Published">Published</option>
@@ -106,7 +106,7 @@
           <div class="col-md-12 form-group">
             <h3 class="card-title"><label class="control-label" for="post_content">Body Content</label></h3>
             <p class="card-subtitle">(Required) The main content section for an article.</p>
-            <textarea class="wysiwyg form-control" name="post_content" id="post_content" required></textarea>
+            <textarea class="wysiwyg-wp form-control" name="post_content" id="post_content" required></textarea>
           </div>
         </div>
       </div>
@@ -165,9 +165,7 @@
         <div class="row">
           <div class="col-md-12">
             <h3 class="card-title"><label class="control-label" for="post_javascript">Custom JavaScript</label></h3>
-            <p class="card-subtitle">(Optional) Use the following textbox to embed any custom JavaScript including tracking
-              pixels and Google Analytics scripts. Be sure to open your JavaScript with a &lt;script&gt; tag and close
-              everything with a &lt;/script&gt; tag.</p>
+            <p class="card-subtitle">(Optional) Use the following textbox to embed any custom JavaScript including tracking pixels and Google Analytics scripts. Be sure to open your JavaScript with a &lt;script&gt; tag and close everything with a &lt;/script&gt; tag.</p>
             <textarea class="form-control" name="post_javascript" id="post_javascript"></textarea>
           </div>
         </div>
@@ -175,3 +173,8 @@
     </div>
   </section>
 </div>
+
+<script>
+applyCodemirror($('#post_javascript')[0]);
+$('.CodeMirror').addClass('h-xs-150p');
+</script>
