@@ -10,7 +10,7 @@
   "featuredImage": "featured-image.jpg",
   "entryPoint": {
     "path": "/<!manager_name!>",
-    "type": "<!module_type!>"
+    "type": "<!manager_module_type!>"
   },
   "dependencies": {
     "solodevCMS": "8.9"
@@ -22,8 +22,8 @@
   }],
   "<!module_type!>": [{
     "name": "<!manager_name!>",
-    "module_type": "<!module_type!>",
-    "display_type": "<!display_type!>",
+    "module_type": "<!manager_module_type!>",
+    "display_type": "<!manager_display_type!>",
     "has_photo_gallery": "0",
     "to_path": "/<!manager_name!>",
     "form_template": {
