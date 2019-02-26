@@ -20,7 +20,7 @@
     "from_path": "/_Assets/custom-form.tpl",
     "to_path": "/_Assets/custom-form.tpl"
   }],
-  "<!module_type!>": [{
+  "<!manager_module_type!>": [{
     "name": "<!manager_name!>",
     "module_type": "<!manager_module_type!>",
     "display_type": "<!manager_display_type!>",
