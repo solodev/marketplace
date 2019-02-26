@@ -10,7 +10,7 @@
   "featuredImage": "featured-image.jpg",
   "entryPoint": {
     "path": "/<!manager_name!>",
-    "type": "Calendar"
+    "type": "<!module_type!>"
   },
   "dependencies": {
     "solodevCMS": "8.9"
@@ -20,10 +20,10 @@
     "from_path": "/_Assets/custom-form.tpl",
     "to_path": "/_Assets/custom-form.tpl"
   }],
-  "Calendar": [{
+  "<!module_type!>": [{
     "name": "<!manager_name!>",
-    "module_type": "Calendar",
-    "display_type": "Forum",
+    "module_type": "<!module_type!>",
+    "display_type": "<!display_type!>",
     "has_photo_gallery": "0",
     "to_path": "/<!manager_name!>",
     "form_template": {
