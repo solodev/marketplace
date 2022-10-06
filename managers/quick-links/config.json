@@ -16,7 +16,7 @@
     "solodevCMS": "9.7"
   },
   "Asset_File": [{
-    "name": "careers-form.tpl",
+    "name": "quick-links-form.tpl",
     "from_path": "/_Assets/quick-links-form.tpl",
     "to_path": "/_Assets/quick-links-form.tpl"
   }],
@@ -30,7 +30,26 @@
     "form_template": {
       "file_path": "/_Assets/quick-links-form.tpl"
     },
+    "datatable_category_group": "/<!manager_name!> Categories",
     "entries": []
+  }],
+  "Datatable_Category_Group": [{
+    "module_type": "Datatable_Category_Group",
+    "name": "<!manager_name!> Categories",
+    "to_path": "/<!manager_name!> Categories",
+    "categories": [{
+      "name": "departments",
+      "title": "Departments",
+      "menu": null
+    }, {
+      "name": "programs",
+      "title": "Programs",
+      "menu": null
+    }, {
+      "name": "services",
+      "title": "Services",
+      "menu": null
+    }]
   }],
   "Asset_Category": [{
     "from_path": "/_Assets",
