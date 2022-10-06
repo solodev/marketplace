@@ -7,7 +7,6 @@
   "author": "Solodev",
   "authorWebsite": "https://www.solodev.com/",
   "projectURL": "https://github.com/solodev/marketplace/managers/quick-links/",
-  "featuredImage": "featured-image.jpg",
   "entryPoint": {
     "path": "/<!manager_name!>",
     "type": "Calendar"
